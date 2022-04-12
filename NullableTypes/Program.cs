@@ -3,7 +3,7 @@
 
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace NullableTypes // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
@@ -46,5 +46,7 @@ For example, if you're working with a database and you have a table called Custo
 Birthdate can be nullable because not everyone wants to put in their birthdate.
 
 In that case, if you want to map that table to a C# class, that's one of the cases where you use a nullable type.
+
+Null Coalescing Operator
  
  */
