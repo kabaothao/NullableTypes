@@ -9,7 +9,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime? date = null;
+
+            Console.WriteLine("GetValueOrDefault " + date.HasValue);
+            Console.WriteLine("HasValue: " + date.Value);
+            Console.WriteLine("Value: " + date.Value);
+
+
         }
     }
 }
