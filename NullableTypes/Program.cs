@@ -9,13 +9,42 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            DateTime? date = null;
+            DateTime? date = new DateTime(2014, 1, 1);
+            DateTime date2 = date.GetValueOrDefault();
+            Console.WriteLine(date2);
 
-            Console.WriteLine("GetValueOrDefault " + date.HasValue);
-            Console.WriteLine("HasValue: " + date.Value);
-            Console.WriteLine("Value: " + date.Value);
+            DateTime? date3 = date2;
+
+            Console.WriteLine(date3.GetValueOrDefault());
+
+
+
+
+
+            //DateTime? date = null;
+
+            //Console.WriteLine("GetValueOrDefault " + date.HasValue);
+            //Console.WriteLine("HasValue: " + date.Value);
+            //Console.WriteLine("Value: " + date.Value);
 
 
         }
     }
 }
+
+
+/*
+ 
+ What are they and why do we need them?
+
+In C#, as you probably know, a value type cannot have null. So if you define a bool,
+
+it can have either a true or a false. But there are situations that you would also like to cater for null values.
+
+For example, if you're working with a database and you have a table called Customers which has a column called Birthdate.
+
+Birthdate can be nullable because not everyone wants to put in their birthdate.
+
+In that case, if you want to map that table to a C# class, that's one of the cases where you use a nullable type.
+ 
+ */
