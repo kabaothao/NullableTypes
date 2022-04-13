@@ -45,6 +45,15 @@ namespace NullableTypes // Note: actual namespace depends on the project name.
 
 /*
  
+
+What is Nullable Types?
+
+Cannot be null
+bool hasAccess = true; // or false
+
+
+
+ 
  What are they and why do we need them?
 
 In C#, as you probably know, a value type cannot have null. So if you define a bool,
@@ -58,5 +67,9 @@ Birthdate can be nullable because not everyone wants to put in their birthdate.
 In that case, if you want to map that table to a C# class, that's one of the cases where you use a nullable type.
 
 Null Coalescing Operator
+
+
+
+
  
  */
